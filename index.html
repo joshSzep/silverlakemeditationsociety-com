@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silverlake Meditation Society</title>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #fdfdfd;
@@ -71,6 +71,26 @@
             margin: 10px 0;
         }
 
+        .meeting-block {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 3px solid var(--text-color);
+        }
+
+        .meeting-block:first-child {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: 0;
+        }
+
+        .meeting-title {
+            margin: 0 0 8px;
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            letter-spacing: 0;
+        }
+
         .marker-text {
             font-family: 'Permanent Marker', cursive;
             font-size: 2rem;
@@ -114,6 +134,26 @@
 
         .resource-links p {
             margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        .online-session {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .online-session h3 {
+            margin: 0 0 10px;
+            font-family: 'Anton', sans-serif;
+            font-size: 1.35rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .online-session p {
+            margin: 8px 0;
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
         }
@@ -173,24 +213,45 @@
 
         <div class="info-section">
             <div class="details">
-                <p>Meditate In Community</p>
-                <p>No Charge</p>
-                <p>All Are Welcome</p>
-                <span class="marker-text">6:00 PM SUNDAY</span>
-                <p style="font-size: 1.2rem; margin-top: 20px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">
-                    Cafe Tropical<br>
-                    2900 Sunset Blvd<br>
-                    Los Angeles, CA 90026
-                </p>
+                <div class="meeting-block">
+                    <p>Meditate In Community</p>
+                    <p>No Charge</p>
+                    <p>All Are Welcome</p>
+                    <p class="meeting-title">In Person</p>
+                    <span class="marker-text">6:00 PM SUNDAY</span>
+                    <p style="font-size: 1.2rem; margin-top: 20px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">
+                        Cafe Tropical<br>
+                        2900 Sunset Blvd<br>
+                        Los Angeles, CA 90026
+                    </p>
+                </div>
+                <div class="meeting-block">
+                    <p class="meeting-title">Online With Ward</p>
+                    <span class="marker-text">7:30 PM FRIDAY</span>
+                    <p style="font-size: 1.2rem; margin-top: 20px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">
+                        Zoom Sangha<br>
+                        Every Friday<br>
+                        7:30-9:00 PM PST
+                    </p>
+                </div>
             </div>
 
             <div class="action-box">
                 <h2>COMMIT TO SIT</h2>
                 <p style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">Add our weekly Sunday session to your calendar.</p>
                 <div class="btn-container">
-                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Silverlake+Meditation+Society&details=Meditate+in+community.+No+charge.+All+are+welcome.&location=Cafe+Tropical,+2900+Sunset+Blvd,+Los+Angeles,+CA+90026&recur=RRULE:FREQ=WEEKLY;BYDAY=SU" target="_blank" class="btn">Google Cal</a>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Silverlake+Meditation+Society&amp;details=Meditate+in+community.+No+charge.+All+are+welcome.&amp;location=Cafe+Tropical,+2900+Sunset+Blvd,+Los+Angeles,+CA+90026&amp;recur=RRULE:FREQ=WEEKLY;BYDAY=SU" target="_blank" class="btn">Google Cal</a>
                     
-                    <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=Silverlake+Meditation+Society&body=Meditate+in+community.+No+charge.+All+are+welcome.&location=Cafe+Tropical,+2900+Sunset+Blvd,+Los+Angeles,+CA+90026" target="_blank" class="btn">Outlook</a>
+                    <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&amp;rru=addevent&amp;subject=Silverlake+Meditation+Society&amp;body=Meditate+in+community.+No+charge.+All+are+welcome.&amp;location=Cafe+Tropical,+2900+Sunset+Blvd,+Los+Angeles,+CA+90026" target="_blank" class="btn">Outlook</a>
+                </div>
+                <div class="online-session">
+                    <h3>Friday Zoom Sangha</h3>
+                    <p>Ward hosts a weekly online sit every Friday, 7:30-9:00 PM PST.</p>
+                    <div class="btn-container">
+                        <a href="https://us02web.zoom.us/j/7729556942" target="_blank" rel="noreferrer" class="btn">Join Zoom</a>
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Ward%27s+Friday+Zoom+Sangha&amp;details=Weekly+online+Zoom+Sangha+with+Ward.%0A%0AJoin+Zoom:+https://us02web.zoom.us/j/7729556942&amp;location=https://us02web.zoom.us/j/7729556942&amp;dates=20260605T193000/20260605T210000&amp;ctz=America/Los_Angeles&amp;recur=RRULE:FREQ=WEEKLY;BYDAY=FR" target="_blank" rel="noreferrer" class="btn">Google Cal</a>
+                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&amp;rru=addevent&amp;subject=Ward%27s+Friday+Zoom+Sangha&amp;body=Weekly+online+Zoom+Sangha+with+Ward.%0A%0AJoin+Zoom:+https://us02web.zoom.us/j/7729556942&amp;location=https://us02web.zoom.us/j/7729556942&amp;startdt=2026-06-05T19:30:00&amp;enddt=2026-06-05T21:00:00" target="_blank" rel="noreferrer" class="btn">Outlook</a>
+                    </div>
                 </div>
                 <div class="resource-links">
                     <p>Download the flyers or browse the source.</p>
@@ -205,7 +266,7 @@
 
         <div class="map-container">
             <iframe 
-                src="https://www.google.com/maps?q=Cafe+Tropical,+2900+Sunset+Blvd,+Los+Angeles,+CA+90026&output=embed" 
+                src="https://www.google.com/maps?q=Cafe+Tropical,+2900+Sunset+Blvd,+Los+Angeles,+CA+90026&amp;output=embed"
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
