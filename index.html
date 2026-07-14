@@ -45,6 +45,94 @@
             display: block;
         }
 
+        .event-banner {
+            margin: 0 0 36px;
+            padding: 22px;
+            color: var(--text-color);
+            border: 5px solid var(--text-color);
+            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.18);
+            transform: rotate(0.6deg);
+            background:
+                repeating-linear-gradient(
+                    -6deg,
+                    #fff 0,
+                    #fff 12px,
+                    #f1f1f1 12px,
+                    #f1f1f1 24px
+                );
+        }
+
+        .event-kicker {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 4px 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 2px solid currentColor;
+            background: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .event-title {
+            margin: 0;
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(2.35rem, 9vw, 5rem);
+            line-height: 0.95;
+            text-transform: uppercase;
+        }
+
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 18px 0 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .event-meta li {
+            padding: 6px 9px;
+            border: 2px solid currentColor;
+            background: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .event-copy {
+            max-width: 680px;
+            margin: 18px 0 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 1.35;
+        }
+
+        .event-link {
+            display: inline-block;
+            margin-top: 18px;
+            color: var(--text-color);
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.7rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .event-link:hover,
+        .event-link:focus {
+            transform: rotate(-1deg) scale(1.05);
+        }
+
+        .event-link:focus-visible {
+            outline: 3px solid var(--text-color);
+            outline-offset: 5px;
+        }
+
         .info-section {
             display: flex;
             flex-direction: column;
@@ -210,6 +298,21 @@
             <source media="(min-width: 768px)" srcset="SMS-Web.jpg">
             <img src="SMS-Flyer.jpg" alt="Silverlake Meditation Society - Meditate in Community">
         </picture>
+
+        <section class="event-banner" aria-labelledby="day-long-title">
+            <span class="event-kicker">Special Practice Day</span>
+            <h1 class="event-title" id="day-long-title">Day-Long Sit</h1>
+            <ul class="event-meta">
+                <li>Sunday, August 9</li>
+                <li>10 AM-4 PM</li>
+                <li>1607 Redesdale Ave</li>
+                <li>Free RSVP</li>
+            </ul>
+            <p class="event-copy">
+                Silent meditation, mindful walking, rest, and shared practice. Open to experienced meditators and anyone newer to extended practice.
+            </p>
+            <a class="event-link" href="https://luma.com/5pgmlabs" target="_blank" rel="noreferrer">Reserve a spot</a>
+        </section>
 
         <div class="info-section">
             <div class="details">
